@@ -1,0 +1,20 @@
+INSTALLING SQL ON LINUX
+
+- to update repositories
+sudo apt update
+
+- to upgrade repositories
+sudo apt upgrade
+
+- installation
+sudo apt install mysql-server
+
+- check mysql version
+mysql --version
+
+- setting up the password # https://phoenixnap.com/kb/access-denied-for-user-root-localhost
+sudo mysql
+[current password]
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '[enter a valid password]'; # root@123
+FLUSH PRIVILEGES;
